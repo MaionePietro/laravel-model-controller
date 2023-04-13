@@ -16,12 +16,11 @@
 </head>
 
 <body>
-
-    <main class="container d-flex vh-100 align-items-center">
-        <div class="card-group ">
+    <main class="d-flex vh-100 align-items-center">
+        <div class="cards">
             @foreach ($movies as $movie)
-            <div class="card">
-                <div class="card-body">
+            <div class="cardCustom">
+                <div>
                     <h5 class="card-title">{{$movie->title}}</h5>
                     <p class="card-text">{{$movie->date}}</p>
                     <p class="card-text"><small class="text-body-secondary">{{$movie->vote}}</small></p>
